@@ -5,6 +5,143 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" href="./assets/images/css.css">
+  <style>
+    * {
+      font-family: 'Raleway', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      }
+
+    body{
+      background-color: black;
+    }
+    .banner{
+      background-image:
+       linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(6, 122, 255, 0.226),
+        rgba(0,0,0,0.6)),
+        url(./assets/images/banner.png);
+     background-size: cover;
+     height: 600px;
+     padding-top: 60px;
+     border-bottom: 1px rgb(0, 132, 255) solid
+     ;
+  }
+  .banner .banner-content{
+    color: white;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  h1{
+    color: transparent;
+    background: -webkit-linear-gradient(rgb(0, 183, 255), blue);
+    background-clip: text;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .banner .logo{
+    background-color: rgba(0,0,0,0.6);
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 16px;
+  }
+  .banner .logo img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .banner button{
+    color: rgb(0, 183, 255);
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid;
+  }
+  #course-content{
+
+    text-align: center;
+    color: white;
+  }
+  h2{
+    color: #33A8DB;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 30px;
+  }
+  #course-content .modules-list {
+  margin: 24px 0;
+  }
+
+  #course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+  }
+
+  #course-content .modules-list .module span {
+    color: #33A8DB;
+  }
+  #transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url("./assets/images/woman-code.png");
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+  }
+
+  #transform-world p {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+  }
+
+  #professional-challenges {
+    text-align: center;
+  }
+
+  #professional-challenges img {
+    margin: 32px 0;
+  }
+
+  footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+  }
+
+  footer .dio-logo {
+    width: 300px;
+  }
+
+  footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  </style>
 </head>
 <body>
   <header class="banner">
@@ -13,10 +150,11 @@
         <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
       <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <p style="margin-bottom: 24px">A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
       <button>Quero me inscrever</button>
     </div>
   </header>
+
   <main>
     <section id="course-content">
       <h2>O que vou aprender?</h2>
@@ -42,7 +180,7 @@
     <section id="professional-challenges">
       <h2>Evolua e encare novos desafios profissionais</h2>
       <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
+      <p style="color: white;">
         Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
         além do conhecimento técnico. 
@@ -52,7 +190,7 @@
   </main>
   <footer>
     <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    <p style="color: white;">Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
   </footer>
 </body>
 </html>
